@@ -1,7 +1,15 @@
+//link: https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
+// Day 5 of 100 DSA Day Challenge.
+// Time Complexity: O(n) in the worst case (when the tree is skewed)
+// Space Complexity: O(h) where h is the height of the tree due to recursive call stack
+
+
+
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
-
-
 
   struct TreeNode {
       int val;
