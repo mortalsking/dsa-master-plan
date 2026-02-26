@@ -1,4 +1,8 @@
-//Approach 1
+//link: https://leetcode.com/problems/binary-tree-left-side-view/description/
+// Day 4 of 100 DSA Day Challenge.
+// Time Complexity: O(n) where n is the number of nodes in the tree
+// Space Complexity: O(n) for the queue in the worst case (when the tree is completely unbalanced)
+
 #include <iostream>
 #include <vector>
 #include <queue>
