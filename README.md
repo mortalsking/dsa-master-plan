@@ -52,3 +52,11 @@ Prepare for technical interview
 | 19   | Algorithm      | Breadth-First Search (BFS) | Graph traversal algorithm exploring neighbors before moving to the next level.                |
 | 20   | Algorithm      | Dynamic Programming        | Optimizes problems by storing results of overlapping subproblems to avoid recomputation.      |
 
+Time complexity:
+
+<img width="1258" height="862" alt="time_complexity" src="https://github.com/user-attachments/assets/fd832811-d843-4779-8956-fd0b30a95d0e" />
+
+Sorting algorithm:
+
+<img width="755" height="483" alt="sorting" src="https://github.com/user-attachments/assets/2c719706-fe50-4e2a-8867-9bc12b6195ec" />
+
