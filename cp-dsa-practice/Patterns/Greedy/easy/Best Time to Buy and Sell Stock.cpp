@@ -6,6 +6,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+// Approach: greedy
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
@@ -16,5 +18,49 @@ public:
             profit = max(profit,prices[i]-todayprice);
         }
         return profit;
+    }
+};
+// Approach: brute force (TLE)
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int n = prices.size(), maxProfit = 0;
+        for(int i=0; i<n-1; i++){
+            for(int j=i+1; j<n; j++){
+                if(prices[j] - prices[i] > maxProfit){
+                    maxProfit = prices[j] - prices[i];
+                }
+            }
+        }
+        return maxProfit;
+    }
+};
+// Approach: dynamic programming (TLE)
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int n = prices.size(), maxProfit = 0;
+        for(int i=0; i<n-1; i++){
+            for(int j=i+1; j<n; j++){
+                if(prices[j] - prices[i] > maxProfit){
+                    maxProfit = prices[j] - prices[i];
+                }
+            }
+        }
+        return maxProfit;
+    }
+};
+// Approach: greedy (optimized)
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int n = prices.size();
+        int buyAtPrice = INT_MAX;
+        int maxProfit = 0;
+        for(int i=0; i<n; i++){
+            buyAtPrice = min(buyAtPrice, prices[i]);
+            maxProfit = max(maxProfit, prices[i] - buyAtPrice); 
+        }
+        return maxProfit;
     }
 };
