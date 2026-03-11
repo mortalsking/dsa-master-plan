@@ -13,7 +13,7 @@ class Solution {
 public:
     int bitwiseComplement(int n) {
         int mask = 1;
-        while((mask&n) != n){
+        while(mask<n){
             mask<<=1;
             mask++;
         }
