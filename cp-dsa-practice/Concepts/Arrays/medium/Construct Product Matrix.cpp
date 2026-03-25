@@ -1,5 +1,6 @@
 //link: https://practice.geeksforgeeks.org/problems/construct-product-matrix/1
 // DS Used: Array
+//day 25 of 100 DSA Day Challenge
 // Time Complexity: O(n*m) where n and m are the dimensions of the grid. We need to fill the ans, xx and yy arrays, which takes O(n*m) time.
 // Space Complexity: O(n*m) as we are using three additional 2D arrays ans, xx and yy to store the product values at each cell, which takes O(n*m) space.
 
