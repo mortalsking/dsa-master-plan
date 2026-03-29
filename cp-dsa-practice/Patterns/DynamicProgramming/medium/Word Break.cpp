@@ -1,5 +1,5 @@
 // Problem Link: https://leetcode.com/problems/word-break/
-// Day 29 of 100 DSA Day Challenge.
+// Day 31 of 100 DSA Day Challenge.
 // DS Used - Dynamic Programming
 // Time Complexity - O(n*m*k) where n is the length of the input string s, m is the number of words in the wordDict and k is the average length of the words in the wordDict. We are iterating through the input string and for each position, we are iterating through the wordDict and checking if the current word matches with the substring of s.
 // Space Complexity - O(n) where n is the length of the input string s. We are using a boolean vector dp of size n+1 to store the results of subproblems, which takes O(n) space.
