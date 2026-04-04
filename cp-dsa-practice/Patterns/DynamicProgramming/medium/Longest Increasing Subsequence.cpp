@@ -33,3 +33,24 @@ public:
         return maxLength;
     }
 };
+//Approach: patience sorting
+class Solution {
+public:
+    int lengthOfLIS(vector<int>& nums) {
+        vector<int> tails; // tails[i] = smallest possible tail of increasing subsequence of length i+1
+        
+        for (int num : nums) {
+            auto it = lower_bound(tails.begin(), tails.end(), num);
+            
+            if (it == tails.end()) {
+                // num is greater than all tails, extend LIS
+                tails.push_back(num);
+            } else {
+                // replace the first element >= num to maintain smallest tails
+                *it = num;
+            }
+        }
+        
+        return tails.size();
+    }
+};
